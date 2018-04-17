@@ -33,3 +33,9 @@ print(listCount)
                
 print("List Hours of posting:")
 print(listTimePost)
+
+with open('test2.csv', 'r') as b:
+  reader = csv.reader(b)
+  your_list2 = list(reader)
+
+print((your_list2[1][3] in listLangs))
